@@ -54,8 +54,6 @@ object demo {
     val location = StdIn.readLine("Enter File Name >>> ")
       try {
         val file = fromFile(location)
-        // C:\Users\Kyle\Dropbox\Private\COG376\nlp\src\main\java\finn.txt
-        // /home/kgb/Dropbox/Private/COG376/nlp/src/main/java/finn.txt
         println(Console.RED + "=== Processing file: " + Console.BOLD + file.descr + Console.RESET + Console.RED + " ===" + Console.RESET)
         sentiment(file.mkString)
       } catch {
@@ -104,8 +102,6 @@ object demo {
     val location = StdIn.readLine("Enter File Name >>> ")
     try {
       val file = fromFile(location)
-      // C:\Users\Kyle\Dropbox\Private\COG376\nlp\src\main\java\finn.txt
-      // /home/kgb/Dropbox/Private/COG376/nlp/src/main/java/finn.txt
       println(Console.RED + "=== Processing file: " + Console.BOLD + file.descr + Console.RESET + Console.RED + " ===" + Console.RESET)
       pos(file.mkString)
     } catch {
